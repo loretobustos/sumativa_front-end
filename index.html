@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aroma & Código | Cafetería de Especialidad</title>
+    <!-- Logo de cafeteria -->
+    <link rel="icon" type="logo" href="assets/img/favicon.ico">
+    <!-- carpeta css con archivo css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Animacion de cafetera de presentación -->
+    <div class="loader-container">
+        <div class="coffee-pot-loader" role="img" aria-label="Cargando experiencia Aroma y Código"></div>
+    </div>
+    <!-- Sección de header barra de navegación-->
+    <header class="barra_navegación">
+        <nav aria-label="Navegación principal">
+            <!-- Logo -->
+            <div class="logo"><img src="assets/img/johnkancil-cafe-logo-7420534_1920.png" alt="Logo de caféteria"></div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <!-- Link de barra de navegación -->
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#menu">Menú</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Menú -->
+        <section id="inicio" class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title">Tu código, tu café, tu lugar</h1>
+            <p>Cafetería de especialidad pensada para desarrolladores en Maipú.</p>
+            <a href="#menu" class="btn">Ver Menú</a>
+        </section>
+
+        <!-- sección de nosotros -->
+        <section id="nosotros" class="seccion-nosotros" aria-labelledby="about-title">
+            <div class="about-container">
+                <article class="about-text">
+                    <h2 id="about-title">Nuestra Historia</h2>
+                    <p><strong>Aroma & Código</strong> no nació en una oficina, sino entre tazas de café y líneas de
+                        código durante largas noches de debugging.</p>
+                    <p>Nuestra fundadora, apasionada por el desarrollo Frontend, buscaba un espacio donde la
+                        concentración de un programador se encontrara con la calidez de un grano recién tostado. Así
+                        creamos este refugio en Maipú: un lugar con WiFi de alta velocidad, enchufes en cada mesa y el
+                        mejor café de especialidad de la zona.</p>
+                    <blockquote>"Porque el código corre mejor cuando el café es de origen."</blockquote>
+                </article>
+
+                <article class="about-image">
+                    <img src="assets/img/just-a-blonde-ai-generated-9406949_1920.png"
+                        alt="Fundadora disfrutando un café mientras trabaja en el diseño de Aroma y Código">
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección de carrusel -->
+        <section id="menu" class="seccion-carrusel">
+            <h2 class="section-title">Nuestra Selección de Especialidad</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" role="list" aria-label="Galería de productos">
+                    <!-- tarjetas de carrusel -->
+                    <article class="carousel-slide card" role="listitem">
+                        <img src="assets/img/inekehuizing-coffee-3727673_1920.jpg"
+                            alt="Café latte con arte de hoja en la espuma">
+                        <div class="card-content">
+                            <h3>Latte de Especialidad</h3>
+                            <p>Granos seleccionados con notas de chocolate.</p>
+                        </div>
+                    </article>
+
+                    <article class="carousel-slide card" role="listitem">
+                        <img src="assets/img/arturo_anez-cup-of-coffee-7570130_1920.jpg"
+                            alt="Taza pequeña de café espresso con crema densa">
+                        <div class="card-content">
+                            <h3>Espresso Intenso</h3>
+                            <p>Para los que buscan energía pura.</p>
+                        </div>
+                    </article>
+
+                    <article class="carousel-slide card" role="listitem">
+                        <img src="assets/img/pexels-drink-1839134_1920.jpg"
+                            alt="Capuchino con Muffin de arándanos recién horneado">
+                        <div class="card-content">
+                            <h3>Capuchino con Muffin Arándano</h3>
+                            <p>Rico Capuchino y un Muffin de Arándanos recién horneado en casa.</p>
+                        </div>
+                    </article>
+
+                    <article class="carousel-slide card" role="listitem">
+                        <img src="assets/img/creativecoffeeconsulter-coffee-4367868_1920.jpg" alt="Café Helado">
+                        <div class="card-content">
+                            <h3>Café Helado</h3>
+                            <p>café con helado de vainilla y galletitas.</p>
+                        </div>
+                    </article>
+
+                    <article class="carousel-slide card" role="listitem">
+                        <img src="assets/img/fietzfotos-coffee-3248018_1920.jpg" alt="Cortado">
+                        <div class="card-content">
+                            <h3>Cortado</h3>
+                            <p>Disfruta tu cortado con nuestra Selección.</p>
+                        </div>
+                    </article>
+
+                    <article class="carousel-slide card" role="listitem">
+                        <img src="assets/img/amoniaq-coffee-817848_1920.jpg" alt="Capuchino">
+                        <div class="card-content">
+                            <h3>Capuchino</h3>
+                            <p>Capuchino, la especialidad de la casa.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+            <p class="carousel-tip">Desliza para ver más...</p>
+        </section>
+
+        <!-- sección de contacto -->
+        <section id="contacto" class="seccion-contacto">
+            <h2>Conecta con nuestra comunidad</h2>
+            <!-- link de acceso a redes sociales -->
+            <div class="contacto-link">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Ir a nuestro perfil de Instagram">Instagram</a>
+
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Ir a nuestra página de Facebook">Facebook</a>
+
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Conectar con nosotros en LinkedIn">LinkedIn</a>
+            </div>
+        </section>
+        <!-- Animacion de granos de cafe callendo -->
+        <section>
+            <div class="coffee-beans-container" aria-hidden="true">
+                <span class="bean"><img src="assets/img/transparent-Photoroom.png" alt="Grano de café"></span>
+                <span class="bean"><img src="assets/img/transparent-Photoroom.png" alt="Grano de café"></span>
+                <span class="bean"><img src="assets/img/transparent-Photoroom.png" alt="Grano de café"></span>
+                <span class="bean"><img src="assets/img/transparent-Photoroom.png" alt="Grano de café"></span>
+                <span class="bean"><img src="assets/img/transparent-Photoroom.png" alt="Grano de café"></span>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="seccion-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 Aroma & Código.</p>
+            <p>Desarrollado por Loreto Bustos.</p>
+        </div>
+    </footer>
+    <!-- javascript -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
