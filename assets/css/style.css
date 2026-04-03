@@ -15,12 +15,12 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Corregido para rúbrica */
+    box-sizing: border-box;
 }
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 80px; /* Evita que el header tape el título al navegar */
+    scroll-padding-top: 80px; 
 }
 
 body {
@@ -77,20 +77,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    pointer-events: none; /* No interfiere con los clics */
+    pointer-events: none; 
     z-index: 999;
 }
 
 .bean {
     position: absolute;
     animation: fall linear infinite;
-    opacity: 0.8; /* Sutil transparencia */
+    opacity: 0.8; 
 }
 
 .bean img { 
-    width: 50px; /* Tamaño del grano */
+    width: 50px; 
     height: auto;
-    /* Técnica para quitar el fondo blanco de image_12.png */
     mix-blend-mode: multiply; 
 }
 
@@ -124,55 +123,50 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
-    padding: 10px 0; /* Un poco más estrecho para elegancia */
-    box-shadow: var(--sombra); /* Sutil sombra para profundidad */
+    padding: 10px 0; 
+    box-shadow: var(--sombra); 
 }
 
 nav {
     display: flex;
-    /* justify-content: space-around; */ /* Eliminado: Centra demasiado */
-    justify-content: space-between; /* NUEVO: Separa logo y enlaces a los extremos */
+    justify-content: space-between; 
     align-items: center;
-    max-width: 1200px; /* Ancho máximo del contenedor */
+    max-width: 1200px; 
     margin: 0 auto;
-    padding: 0 20px; /* Margen interno lateral */
+    padding: 0 20px; 
 }
 
 .logo {
-    display: flex; /* Centra la imagen dentro del div */
+    display: flex;
     align-items: center;
-    /* flex: 1; */ /* Eliminado: No necesitamos que ocupe espacio extra */
 }
 
 .logo img {
-    /* width: 60px; */ /* Eliminado: Muy chico */
     height: auto;
-    max-height: 130px; /* NUEVO: Agrandado significativamente */
-    width: auto; /* Mantiene la proporción */
-    background-color: var(--blanco-hueso); /* Fondo para contraste */
-    border-radius: 50%; /* Circular */
-    padding: 5px; /* Espacio interno */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Sutil sombra en el logo */
-    transition: transform 0.3s ease; /* Pequeña microinteracción */
+    max-height: 130px; 
+    width: auto; 
+    background-color: var(--blanco-hueso); 
+    border-radius: 50%; 
+    padding: 5px; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); 
+    transition: transform 0.3s ease;
 }
 
 .logo img:hover {
-    transform: scale(1.05); /* Se agranda ligeramente al pasar el mouse */
+    transform: scale(1.05); 
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 30px; /* Más espacio entre enlaces */
-    /* flex: 1; */ /* Eliminado */
-    /* justify-content: flex-end; */ /* Eliminado */
+    gap: 30px; 
 }
 
 .nav-links a {
     color: white;
     text-decoration: none;
-    font-weight: 600; /* Texto más grueso */
-    font-size: 1.1rem; /* Tamaño de fuente equilibrado */
+    font-weight: 600; 
+    font-size: 1.1rem; 
     padding: 5px 10px;
     border-radius: 5px;
     transition: all 0.3s ease;
@@ -180,16 +174,15 @@ nav {
 
 .nav-links a:hover {
     color: var(--dorado-acento);
-    background-color: rgba(255, 255, 255, 0.1); /* Sutil fondo al hover */
+    background-color: rgba(255, 255, 255, 0.1); 
 }
 
-/* Menú Móvil (Hamburguesa) */
 .menu-toggle { display: none; }
 
 .menu-icon {
     display: none;
     color: white;
-    font-size: 2rem; /* Icono más grande */
+    font-size: 2rem; 
     cursor: pointer;
 }
 
@@ -275,7 +268,7 @@ nav {
     max-width: 1200px;
     margin: 4rem auto;
     padding: 0 20px;
-    scroll-margin-top: 90px; /* Para que el menú no tape el título */
+    scroll-margin-top: 90px; 
 }
 
 .section-title {
@@ -322,12 +315,10 @@ nav {
    ========================================= */
 .seccion-contacto {
     position: relative;
-    /* Mayor padding superior e inferior para agrandar la sección */
     padding: 120px 20px; 
     background-color: var(--cafe-primario);
     color: white;
     text-align: center;
-    /* Asegurar que el contenido esté centrado verticalmente */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -335,7 +326,7 @@ nav {
 }
 
 .seccion-contacto h2 {
-    font-size: 2.5rem; /* Título más grande */
+    font-size: 2.5rem; 
     margin-bottom: 30px;
     color: var(--blanco-hueso);
 }
@@ -344,34 +335,31 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 25px; /* Más espacio entre botones */
+    gap: 25px; 
     margin-top: 30px;
     width: 100%;
-    max-width: 800px; /* Controla el ancho máximo de los links */
+    max-width: 800px; 
 }
 
 .contacto-link a {
     color: var(--dorado-acento);
     text-decoration: none;
-    font-size: 1.2rem; /* Texto del link más grande */
+    font-size: 1.2rem; 
     font-weight: bold;
-    /* Mayor padding interno para botones más grandes */
     padding: 15px 35px; 
-    border: 2px solid var(--dorado-acento); /* Borde más grueso */
-    border-radius: 50px; /* Forma de píldora */
+    border: 2px solid var(--dorado-acento); 
+    border-radius: 50px; 
     transition: all 0.3s ease;
-    /* Asegura que ocupen espacio en pantallas pequeñas */
     flex: 0 1 auto; 
 }
 
 .contacto-link a:hover {
     background-color: var(--dorado-acento);
     color: var(--cafe-oscuro);
-    transform: translateY(-3px); /* Pequeño efecto de elevación */
-    box-shadow: 0 10px 20px rgba(175, 143, 111, 0.3); /* Sombra elegante */
+    transform: translateY(-3px); 
+    box-shadow: 0 10px 20px rgba(175, 143, 111, 0.3);
 }
 
-/* Ajuste para dispositivos móviles */
 @media (max-width: 480px) {
     .seccion-contacto { padding: 80px 10px; }
     .seccion-contacto h2 { font-size: 1.8rem; }
@@ -395,7 +383,6 @@ nav {
 @media (max-width: 768px) {
     html { scroll-padding-top: 60px; }
 
-    /* Menú hamburguesa */
     .menu-icon { display: block; }
     
     .nav-links {
